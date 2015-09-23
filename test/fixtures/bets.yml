@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bid: 
+  rid: 
+  hid: 
+  finish_position: 1
+  amount: 1.5
+  paid: false
+
+two:
+  bid: 
+  rid: 
+  hid: 
+  finish_position: 1
+  amount: 1.5
+  paid: false

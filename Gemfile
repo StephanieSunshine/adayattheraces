@@ -6,6 +6,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 gem 'omniauth'
 gem 'puma'
+gem 'bson_ext'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
