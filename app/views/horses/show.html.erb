@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @horse.name %>
+</p>
+
+<p>
+  <strong>Wins:</strong>
+  <%= @horse.wins %>
+</p>
+
+<p>
+  <strong>Places:</strong>
+  <%= @horse.places %>
+</p>
+
+<p>
+  <strong>Shows:</strong>
+  <%= @horse.shows %>
+</p>
+
+<p>
+  <strong>Loses:</strong>
+  <%= @horse.loses %>
+</p>
+
+<p>
+  <strong>Energy:</strong>
+  <%= @horse.energy %>
+</p>
+
+<p>
+  <strong>Stride:</strong>
+  <%= @horse.stride %>
+</p>
+
+<p>
+  <strong>Luck:</strong>
+  <%= @horse.luck %>
+</p>
+
+<p>
+  <strong>Races:</strong>
+  <%= @horse.races %>
+</p>
+
+<p>
+  <strong>Money won:</strong>
+  <%= @horse.money_won %>
+</p>
+
+<%= link_to 'Edit', edit_horse_path(@horse) %> |
+<%= link_to 'Back', horses_path %>

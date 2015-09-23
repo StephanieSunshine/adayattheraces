@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Horses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Wins</th>
+      <th>Places</th>
+      <th>Shows</th>
+      <th>Loses</th>
+      <th>Energy</th>
+      <th>Stride</th>
+      <th>Luck</th>
+      <th>Races</th>
+      <th>Money won</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @horses.each do |horse| %>
+      <tr>
+        <td><%= horse.name %></td>
+        <td><%= horse.wins %></td>
+        <td><%= horse.places %></td>
+        <td><%= horse.shows %></td>
+        <td><%= horse.loses %></td>
+        <td><%= horse.energy %></td>
+        <td><%= horse.stride %></td>
+        <td><%= horse.luck %></td>
+        <td><%= horse.races %></td>
+        <td><%= horse.money_won %></td>
+        <td><%= link_to 'Show', horse %></td>
+        <td><%= link_to 'Edit', edit_horse_path(horse) %></td>
+        <td><%= link_to 'Destroy', horse, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Horse', new_horse_path %>

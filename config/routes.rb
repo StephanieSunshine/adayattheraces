@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :auctions
+  resources :bids
+  resources :races
+  resources :horses
+  resources :horses
   resources :bets
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

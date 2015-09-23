@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Runtime:</strong>
+  <%= @race.runtime %>
+</p>
+
+<p>
+  <strong>Contestants:</strong>
+  <%= @race.contestants %>
+</p>
+
+<p>
+  <strong>Finish order:</strong>
+  <%= @race.finish_order %>
+</p>
+
+<p>
+  <strong>Bets:</strong>
+  <%= @race.bets %>
+</p>
+
+<p>
+  <strong>Purse:</strong>
+  <%= @race.purse %>
+</p>
+
+<%= link_to 'Edit', edit_race_path(@race) %> |
+<%= link_to 'Back', races_path %>

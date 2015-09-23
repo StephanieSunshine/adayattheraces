@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  runtime: 2015-09-22 17:56:05
+  contestants: 
+  finish_order: 
+  bets: 
+  purse: 1.5
+
+two:
+  runtime: 2015-09-22 17:56:05
+  contestants: 
+  finish_order: 
+  bets: 
+  purse: 1.5

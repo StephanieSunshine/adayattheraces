@@ -1,0 +1,57 @@
+<%= form_for(@horse) do |f| %>
+  <% if @horse.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@horse.errors.count, "error") %> prohibited this horse from being saved:</h2>
+
+      <ul>
+      <% @horse.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :wins %><br>
+    <%= f.number_field :wins %>
+  </div>
+  <div class="field">
+    <%= f.label :places %><br>
+    <%= f.number_field :places %>
+  </div>
+  <div class="field">
+    <%= f.label :shows %><br>
+    <%= f.number_field :shows %>
+  </div>
+  <div class="field">
+    <%= f.label :loses %><br>
+    <%= f.number_field :loses %>
+  </div>
+  <div class="field">
+    <%= f.label :energy %><br>
+    <%= f.number_field :energy %>
+  </div>
+  <div class="field">
+    <%= f.label :stride %><br>
+    <%= f.number_field :stride %>
+  </div>
+  <div class="field">
+    <%= f.label :luck %><br>
+    <%= f.number_field :luck %>
+  </div>
+  <div class="field">
+    <%= f.label :races %><br>
+    <%= f.text_field :races %>
+  </div>
+  <div class="field">
+    <%= f.label :money_won %><br>
+    <%= f.text_field :money_won %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

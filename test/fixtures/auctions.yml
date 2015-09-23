@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hid: 
+  min_amount: 1.5
+  current_amount: 1.5
+  auction_end: 2015-09-22 18:05:15
+  bids: 
+  ended: false
+
+two:
+  hid: 
+  min_amount: 1.5
+  current_amount: 1.5
+  auction_end: 2015-09-22 18:05:15
+  bids: 
+  ended: false
